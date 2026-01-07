@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meus Gastos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Rastreador de Gastos</h2>
+
+    <p id="msg-erro" class="mensagem-erro"></p>
+    
+    <input type="text" id="descricao" placeholder="Ex: Coxinha" />
+    <input type="number" id="valor" placeholder="Valor (R$)" />
+
+    <button onclick="adicionarGasto()" class="add-btn">Adicionar Gasto</button>
+
+    <h3>Histórico:</h3>
+    <ul id="lista-gastos"></ul>
+
+    <h3 id="valor-total">Total: R$ 0.00</h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
